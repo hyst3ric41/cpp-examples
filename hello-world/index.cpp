@@ -10,7 +10,7 @@
 /**
  * Un namespace esa concepto de programación que busca contener un grupo
  * de nombres como métodos, variables, objetos, etc. Importando este namespace,
- * se evita llamar, p. ej., a 'std::cout' o 'std::endl' en el método main(). 
+ * se evita llamar, p. ej., a 'std::cout' o 'std::endl' en el método main().
  */
 using namespace std;
 
@@ -57,9 +57,7 @@ int main() {
  * loop() es un método en donde se colocan todas las instrucciones que
  * van a realizarse de forma repetitiva.
  */
-void loop() {
-    // code
-}
+void loop() {}
 
 /**
  * Es posible agregar cuantas funciones se deseen siempre y cuando
