@@ -20,4 +20,9 @@ Ordenadas de menor a mayor dificultad.
     - Operadores lógicos y de comparación y su jerarquía de operaciones.
     - Librería cmath (pow, sqrt, sin, cos, tan).
     - Constantes.
-
+- **/math-exercises**. Ejercicios matemáticos sencillos.
+    - Área de un triángulo.
+    - Volúmen de una esfera.
+    - Promedio de notas.
+    - Conversión de temperaturas.
+    - Distancia entre dos puntos.
