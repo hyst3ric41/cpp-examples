@@ -4,6 +4,8 @@
  * apenas inicie el archivo y no llevan punto y coma (;).
  * 
  * Comúnmente se les llama header files o archivos de cabecera.
+ * 
+ * Cualquier directiva de preprocesador no lleva (;).
  */
 #include <iostream>
 
