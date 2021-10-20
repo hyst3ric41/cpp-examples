@@ -13,6 +13,7 @@ Ordenadas de menor a mayor dificultad.
 - **/basic-concepts**. Conceptos básicos de C++.
     - Tipos de variables y su inicialización.
     - Notación científica.
+    - Asignaciones compuestas (x++, x--, x +=, x -=, x *=, x /=).
     - Resolver el peso en memoria de variables con exactitud (sizeof).
     - Uso del modificador unsigned.
     - Entrada en consola usando el objeto cin.
@@ -20,6 +21,11 @@ Ordenadas de menor a mayor dificultad.
     - Operadores lógicos y de comparación y su jerarquía de operaciones.
     - Librería cmath (pow, sqrt, sin, cos, tan).
     - Constantes.
+    - Definiciones de tipo (typedef).
+    - Estructuras condicionales (if, if-else, switch).
+    - Estructuras repetitivas (for, while, do-while) con operadores de bucle (break, continue).
+    - Arreglos unidimensionales, cadenas de texto y secuencia de escape null-terminator (\0).
+    - Método de entrada por consola cin.getline().
 - **/math-exercises**. Ejercicios matemáticos sencillos.
     - Área de un triángulo.
     - Volúmen de una esfera.

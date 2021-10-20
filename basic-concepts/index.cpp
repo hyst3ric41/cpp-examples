@@ -11,6 +11,7 @@
 using namespace std;
 
 int main() {
+    
     /**
      * Tipos de variables:
      * 
@@ -78,6 +79,25 @@ int main() {
     cout << "decimalLargo var size: " << sizeof(decimalLargo) << " bytes" << endl;
 
     cout << endl;
+
+    /**
+     * Asignaciones compuestas.
+     * Es una forma compacta de asignar valores a variables elaborando una
+     * operación aritmética conjuntamente:
+     * - (x++). Suma 1 a la variable.
+     * - (x--). Resta 1 a la variable.
+     * - (x +=). Suma a la variable el valor indicado luego del inicializador.
+     * - (x -=). Resta a la variable el valor indicado luego del inicializador.
+     * - (x *=). Multiplica a la variable el valor indicado luego del inicializador.
+     * - (x /=). Divide a la variable el valor indicado luego del inicializador.
+     */
+    unsigned short int i = 10;
+    i++;    // 11
+    i--;    // 9
+    i += 3; // 13
+    i -= 4; // 6
+    i *= 3; // 30
+    i /= 5; // 2
 
     /**
      * int pesa 4 bytes, es decir 32 bits (1 byte = 8 bits... 8 x 4 = 32), pero los computadores
@@ -217,6 +237,163 @@ int main() {
     cout << "Constante mediante directiva: " << PI << endl;
     const float gravedad = 9.8;
     cout << "Constante mediante palabra reservada const: " << gravedad << endl;
+
+    cout << endl;
+
+    /**
+     * Definiciones de tipo (typedef).
+     * 
+     * Es un mecanismo de C++ que permite crear tipos de variables
+     * personalizados para evitar escribir múltiples veces el mismo tipo.
+     */
+    typedef unsigned short int tipoPropio;
+    tipoPropio m = 9;
+    cout << "Valor de la definición personalizada: " << m << endl;
+
+    cout << endl;
+
+    /**
+     * Estructura condicional simple.
+     */
+    if (true) {
+        // do something
+    }
+    if (1 > 4) {
+        // do something
+    } else {
+        // do something
+    }
+
+    /**
+     * Estructura condicional múltiple.
+     * 
+     * Esta estructura admite solo números enteros (int) o caracteres
+     * (char).
+     */
+    unsigned short int randomValue = 8;
+    switch (randomValue) {
+        case 2:
+            // do something
+        break;
+        case 90:
+            // do something
+        break;
+        default:
+            // do something
+        break;
+    }
+
+    /**
+     * Estructura repetitiva for.
+     * 
+     * 'size_t' es una definición de tipo built-in de C++
+     * definida por defecto equivalente a 'unsigned long'.
+     */
+    cout << "Iterando ciclo for" << endl;
+    for (size_t i = 0; i < 5; i++) {
+        cout << "(for) i :: " << i << endl;
+    }
+
+    cout << endl;
+
+    /**
+     * Estructura repetitiva while.
+     */
+    unsigned short int f = 0;
+    while (f <= 50) {
+        cout << "(while) i :: " << f << endl;
+        /**
+         * En todas las estructuras repetitivas, la palabra reservada 'break'
+         * sirve para terminar el bucle definitivamente.
+         */
+        if (f == 6) break;
+        f++;
+    }
+
+    cout << endl;
+
+    /**
+     * Estructura repetitiva do-while.
+     */
+    unsigned short int g = 0;
+    do {
+        cout << "(do-while) i :: " << g << endl;
+        g++;
+        /**
+         * En todas las estructuras repetitivas, la palabra reservada 'continue'
+         * sirve para saltarse a la siguiente interación directamente sin pasar
+         * por el resto de código que había después de la palabra reservada misma.
+         */
+        continue;
+        cout << "Texto que no se imprimirá..." << endl;
+    } while (g <= 10);
+
+    cout << endl;
+
+    /**
+     * Arreglos.
+     * 
+     * Son un conjunto de variables bajo una misma dirección en memoria y que
+     * pertenecen al mismo tipo (int, char, bool, etc).
+     * 
+     * Existen dos formas de definir la cantidad de elementos que el arreglo
+     * tendrá:
+     * 
+     * - Por declaración:
+     * 
+     * En este caso, si se consulta un índice del arreglo, como p. ej. arreglo1[3],
+     * tendrá un valor basura aleatorio.
+     */
+    int arreglo1[10];
+    cout << "arreglo1 usando declaración: " << arreglo1 << endl;
+    /**
+     * - Por asignación:
+     * 
+     * Que un arreglo tenga determinada cantidad de elementos no quiere decir que
+     * se tengan usar todos. Pueden definirse 5 elementos y usar solo 2. Lo anterior
+     * es posible mas sin embargo no es recomendable.
+     */
+    float arreglo2[] = { 8.3, -19.9, 2.0, 1.5 };
+    cout << "arreglo2[0]: " << arreglo2[0] << endl;
+
+    /**
+     * En caso de desar formar palabras con arreglos de chars, es recomendable usar
+     * la secuencia de escape \0 que le indicará a la consola que la secuencia de
+     * caracteres ha terminado.
+     */
+    char nombre[] = { 'G', 'u', 'i', 'l', 'l', 'e', 'r', 'm', 'o', '\0' };
+    cout << "char[] usando asignación: " << nombre << endl;
+
+    /**
+     * Cadenas de texto. Es un arreglo de chars que tiene un modo especial de
+     * inicialización por asignación utilizando las dobles comillas:
+     */
+    char texto[] = "Lorem ipsum dolor sit amet.";
+    cout << "char[] usando doble comillas: " << texto << endl;
+
+    /**
+     * Un comportamiento útil de entrada por consola es que se puede asignar un
+     * valor a un arreglo de caracteres directamente de la sig. manera:
+     */
+    char entrada1[20];
+    cout << "Ingresa una palabra de no más de 20 caracteres: ";
+    cin >> entrada1;
+    cout << "La palabra es: " << entrada1 << endl;
+    /**
+     * Por defecto, cin lee los valores introducidos hasta que detecta un espacio
+     * en blanco. Por lo anterior, la sig. asignación no admitirá más de 1 palabra.
+     * 
+     * Para solucionar esto, se recomienda usar el método .getline() para tomar el valor
+     * de entrada bajo un comportamiento en específico. En este ejemplo, cin no funcionará
+     * porque ya habrá detectado un buffer cargado desde entonces. Ver ejercicio de buffers
+     * para revisar el tema.
+     */
+    char entrada2[30];
+    cout << "Ahora, ingresa un texto de no más de 30 caracteres con espacios: ";
+    cin.getline(entrada2, 30);
+    cout << entrada2 << endl;
+
+    cout << endl;
 
     return 0;
 }
