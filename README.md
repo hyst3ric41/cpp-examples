@@ -38,3 +38,9 @@ Ordenadas de menor a mayor dificultad.
     - Extraer el menor valor de un arreglo.
     - Ordenar un arreglo por bubble sort (On^2).
     - Producto de dos matrices de 3x3 (arreglos bidimensionales).
+- **/pointers**. Punteros y referencias.
+    - Puntero de una variable (operador &).
+    - Declaración e inicialización de un puntero.
+    - Operador de indirección de un puntero.
+    - Declaración e inicialización de una referencia.
+    - Aritmética de punteros en arreglos.
