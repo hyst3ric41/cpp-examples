@@ -44,3 +44,7 @@ Ordenadas de menor a mayor dificultad.
     - Operador de indirección de un puntero.
     - Declaración e inicialización de una referencia.
     - Aritmética de punteros en arreglos.
+- **/functions**. Funciones.
+    - Prototipado de métodos y procedimientos.
+    - Paso de referencias o punteros a una función.
+    - Sobrecarga de funciones.
