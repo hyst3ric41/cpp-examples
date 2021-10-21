@@ -33,4 +33,8 @@ Ordenadas de menor a mayor dificultad.
     - Conversión de temperaturas.
     - Distancia entre dos puntos.
 - **/array-exercises**. Ejercicios con arreglos.
-    - Manipulación de buffer
+    - Limitación de scope en estructura condicional switch.
+    - Convertir un texto a mayúsculas.
+    - Extraer el menor valor de un arreglo.
+    - Ordenar un arreglo por bubble sort (On^2).
+    - Producto de dos matrices de 3x3 (arreglos bidimensionales).
