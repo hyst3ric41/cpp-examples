@@ -387,12 +387,17 @@ int main() {
      * de entrada bajo un comportamiento en específico.
      * En este ejemplo, cin no funcionará porque ya habrá detectado un buffer cargado desde
      * entonces con 1 o más \n. Un workaround utilizado es ignorar el primer caracter (o cuantos
-     * se necesiten) con la instrucción cin.ignore(), pero existen mejors alternativas.
+     * se necesiten) con la instrucción cin.ignore(n?:int, delimiter?:char)
      */
     char entrada2[30];
     cout << "Ahora, ingresa un texto de no más de 30 caracteres con espacios: ";
-    cin.ignore();
-    cin.ignore();
+    cin.ignore(); // Borra 1 caracter del buffer
+    /**
+     * ignore() también puede recibir dos parámetros, uno que indique cuantos caracteres
+     * borrar máximo (el límite es 256 caracteres) y un delimitador. La sig. línea
+     * borrará 256 caracteres o hasta que se encuentre el último '\n', lo que pase primero.
+     */
+    cin.ignore(256, '\n');
     cin.getline(entrada2, 30);
     cout << entrada2 << endl;
 
