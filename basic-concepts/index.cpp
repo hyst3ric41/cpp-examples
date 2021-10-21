@@ -384,12 +384,15 @@ int main() {
      * en blanco. Por lo anterior, la sig. asignación no admitirá más de 1 palabra.
      * 
      * Para solucionar esto, se recomienda usar el método .getline() para tomar el valor
-     * de entrada bajo un comportamiento en específico. En este ejemplo, cin no funcionará
-     * porque ya habrá detectado un buffer cargado desde entonces. Ver ejercicio de buffers
-     * para revisar el tema.
+     * de entrada bajo un comportamiento en específico.
+     * En este ejemplo, cin no funcionará porque ya habrá detectado un buffer cargado desde
+     * entonces con 1 o más \n. Un workaround utilizado es ignorar el primer caracter (o cuantos
+     * se necesiten) con la instrucción cin.ignore(), pero existen mejors alternativas.
      */
     char entrada2[30];
     cout << "Ahora, ingresa un texto de no más de 30 caracteres con espacios: ";
+    cin.ignore();
+    cin.ignore();
     cin.getline(entrada2, 30);
     cout << entrada2 << endl;
 

@@ -25,10 +25,12 @@ Ordenadas de menor a mayor dificultad.
     - Estructuras condicionales (if, if-else, switch).
     - Estructuras repetitivas (for, while, do-while) con operadores de bucle (break, continue).
     - Arreglos unidimensionales, cadenas de texto y secuencia de escape null-terminator (\0).
-    - Método de entrada por consola cin.getline().
+    - Método de entrada por consola cin.getline() y cin.ignore().
 - **/math-exercises**. Ejercicios matemáticos sencillos.
     - Área de un triángulo.
     - Volúmen de una esfera.
     - Promedio de notas.
     - Conversión de temperaturas.
     - Distancia entre dos puntos.
+- **/array-exercises**. Ejercicios con arreglos.
+    - Manipulación de buffer
