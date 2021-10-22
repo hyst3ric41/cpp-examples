@@ -25,8 +25,12 @@ int main() {
     Auto jetta;
     jetta.puertas = 4;
     strcpy(jetta.marca, "Volkswagen"); // Best approach to assign value to char array in struct...
-    Auto frontier;
-    strcpy(frontier.marca, "Nissan");
+
+    /**
+     * También es posible asignar todos los valores de un solo tirón.
+     */
+    Auto frontier = { true, "Nissan", 4 };
+    
     cout << "Marca del auto 1: " << jetta.marca << endl;
     cout << "Marca del auto 2: " << frontier.marca << endl;
 
