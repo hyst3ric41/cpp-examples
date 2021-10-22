@@ -48,3 +48,6 @@ Ordenadas de menor a mayor dificultad.
     - Prototipado de métodos y procedimientos.
     - Paso de referencias o punteros a una función.
     - Sobrecarga de funciones.
+- **/structures**. Estructuras de datos (registros).
+    - Declaración e inicialización de un registro (struct).
+    - Prototipado de método con retorno de registro.
