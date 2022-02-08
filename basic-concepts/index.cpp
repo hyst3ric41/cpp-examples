@@ -73,8 +73,17 @@ int main() {
     cout << endl;
 
     /**
-     * Para obtener el peso en bits de la variable en cuestión, se invoca el método
-     * sizeof() integrada por C++.
+     * Operador sizeof():
+     * 
+     * Para obtener el peso en bytes de la variable en cuestión, se invoca el operador
+     * sizeof() integrado por C++. Lo anterior significa que, aún teniendo sintaxis de
+     * función, sizeof() es un operador integrado que no podrá llamarse en tiempo de
+     * ejecución porque cuando el proceso de compilación termine, todo rastro de lo que
+     * significaba sizeof() no existirá; tan solo los resultados de su operación escritos
+     * directamente sobre el código.
+     * 
+     * Más información:
+     * + https://stackoverflow.com/questions/3954844/sizeof-operator-or-function
      */
     cout << "decimalLargo var size: " << sizeof(decimalLargo) << " bytes" << endl;
 
@@ -232,7 +241,10 @@ int main() {
      * - Palabra reservada 'const'. Se antepone la palabra reservada 'const' antes
      * de una inicialización de valor común y corriente.
      * 
-     * No existen diferencia entre ambas.
+     * No existen diferencia entre ambas. Es importante considerar que las constantes
+     * no son almacenadas en memoria en tiempo de ejecución, sino que el proceso de
+     * compilación es el encargado de leer el código completo y reemplazar la constante
+     * definida con el valor "hardcodeado", es decir, escrito directamente.
      */
     cout << "Constante mediante directiva: " << PI << endl;
     const float gravedad = 9.8;
@@ -355,6 +367,27 @@ int main() {
      */
     float arreglo2[] = { 8.3, -19.9, 2.0, 1.5 };
     cout << "arreglo2[0]: " << arreglo2[0] << endl;
+
+    /**
+     * C++ no incluye un operador o utilidad que permita obtener directamente la
+     * cantidad de elementos que tiene un arreglo. Es por eso que existen múltiples
+     * formas de obtener este dato, de entre las cuales la más convencional es la
+     * siguiente:
+     */
+    cout << "Tamaño en bits de arreglo2[]: " << sizeof(arreglo2) << endl; 
+    cout << "Tamaño en bits de arreglo2[0]: " << sizeof(arreglo2[0]) << endl; 
+    cout << "Elementos en el arreglo2[]: " << sizeof(arreglo2) / sizeof(arreglo2[0]) << " items" << endl;
+    /**
+     * Como se expuso anteriormente, el operador sizeof() obtendrá el peso en bytes de un
+     * variable, que en este caso es un arreglo. Suponiendo el peso en bytes del arreglo es
+     * de 16 bytes porque almacena 4 valores tipo int (4 bytes cada uno), entonces la cantidad
+     * de elementos que el arreglo tendría sería de 4 (4 bytes 4 veces es igual a 16 bytes).
+     * 
+     * Es por esto que en la operación anterior, se divide el tamaño total de la variable entre
+     * el tamaño de un elemento del mismo tipo, en particular y no más que por convención, se
+     * utiliza el primer elemento de la lista, aunque pudiera ser cualquier otra variable del
+     * mismo tipo.
+     */
 
     /**
      * En caso de desar formar palabras con arreglos de chars, es recomendable usar
