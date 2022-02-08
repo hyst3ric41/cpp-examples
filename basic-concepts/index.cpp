@@ -47,7 +47,7 @@ int main() {
     cout << "char initialization equivalents: " << equivDecimal << ", " << equivHexadecimal << ", " << equivOctal << endl;
     /**
      * - bool. Valores lógicos; false, para indicar una negación; y true, para
-     * indicar una aserción.
+     * indicar una aserción. Su espacio en memoria es de 4 bytes.
      */
     bool booleano = true;
     cout << "bool: " << booleano << endl;

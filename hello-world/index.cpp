@@ -1,11 +1,13 @@
 /**
- * #include es una directiva que utiliza el preprocesador de
- * C++ para incluir código de una biblioteca Siempre se ubican
+ * #include es una directiva que utiliza el pre-procesador de
+ * C++ para incluir código de una biblioteca. Siempre se ubican
  * apenas inicie el archivo y no llevan punto y coma (;).
- * 
  * Comúnmente se les llama header files o archivos de cabecera.
  * 
- * Cualquier directiva de preprocesador no lleva (;).
+ * Cualquier directiva de pre-procesador no lleva (;).
+ * 
+ * La librería <iostream> permite trabajar con datos tanto de
+ * entrada como de salida.
  */
 #include <iostream>
 
@@ -17,7 +19,7 @@
 using namespace std;
 
 /**
- * main() es un método conocido como 'función principal' que
+ * main() es un método conocido como 'función principal', y
  * contiene las configuraciones del programa, como condiciones
  * iniciales, inicialización de librerías, etc. Es el primer
  * bloque de código que siempre se lee apenas el código

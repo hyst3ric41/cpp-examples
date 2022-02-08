@@ -5,11 +5,11 @@ Ordenadas de menor a mayor dificultad.
 ### Indice
 - **/hello-world**. Hola mundo en C++.
     - Estructura básica de cualquier programa en C++.
-    - Introducción a los namespaces.
+    - Introducción a las directivas de pre-procesador y namespaces.
     - Introducción al operador de inserción <<.
     - Salida en consola usando el objeto cout.
     - Secuencias de escape para salida en consola (\n, \b, \r, \t).
-    - Introducción a los métodos.
+    - Introducción básica a las funciones.
 - **/basic-concepts**. Conceptos básicos de C++.
     - Tipos de variables y su inicialización.
     - Notación científica.
@@ -51,3 +51,6 @@ Ordenadas de menor a mayor dificultad.
 - **/structures**. Estructuras de datos (registros).
     - Declaración e inicialización de un registro (struct).
     - Prototipado de método con retorno de registro.
+- **/piles**. Concepto de pilas.
+    - Introducción al concepto de pilas.
+    - Reservación y liberación de memoria con new y delete.
