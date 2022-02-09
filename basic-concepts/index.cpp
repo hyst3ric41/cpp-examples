@@ -84,6 +84,9 @@ int main() {
      * 
      * Más información:
      * + https://stackoverflow.com/questions/3954844/sizeof-operator-or-function
+     * 
+     * Lista completa de operadores integrados en C++:
+     * + https://docs.microsoft.com/es-es/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160
      */
     cout << "decimalLargo var size: " << sizeof(decimalLargo) << " bytes" << endl;
 
@@ -190,6 +193,9 @@ int main() {
      * - (>)  --> greater than
      * - (<=) --> less or equal than
      * - (>=) --> greater  or equal than
+     * 
+     * Lista completa de operadores integrados en C++:
+     * + https://docs.microsoft.com/es-es/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160
      */
     cout << "(5 < 9): " << (5 < 9) << endl;
     cout << "(-3 == -3): " << (-3 == -3) << endl;
