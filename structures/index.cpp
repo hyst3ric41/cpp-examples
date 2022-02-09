@@ -5,8 +5,11 @@
 using namespace std;
 
 /**
- * Un registro (o estructura) es una agrupación de datos, los cuales no
- * necesariamente son del mismo tipo. Se definen con la palabra 'struct'.
+ * Un registro (o estructura) es una agrupación de datos del mismo o diferentes
+ * tipos definida por la palabra reservada 'struct'. Esta estructura de datos funciona
+ * por debajo con punteros.
+ * 
+ * Estructura de datos llamada Auto.
  */
 struct Auto {
     bool isNew = true;
@@ -14,35 +17,59 @@ struct Auto {
     int puertas;
 };
 
+// Prototipo de función que recibe dos parámetros y retorna una estructura de datos llamada Auto
 Auto crearAuto(int, char[]);
 
 int main() {
 
     /**
-     * El registro se declara con el tipo de dato con el nombre de la estructura
-     * creada.
+     * Un registro se declara colocando como tipo de dato el nombre de la
+     * estructura creada.
      */
     Auto jetta;
     jetta.puertas = 4;
-    strcpy(jetta.marca, "Volkswagen"); // Best approach to assign value to char array in struct...
+    strcpy(jetta.marca, "Volkswagen"); // <-- La mejor manera de asignar un valor char array a una estructura...
 
     /**
-     * También es posible asignar todos los valores de un solo tirón.
+     * La siguientes sentencias declaran e inicializan a la estructura de un tirón, diferenciandose
+     * por el momento en el que la memoria necesaria es asignada (tiempo de compilación vs tiempo de
+     * ejecución).
+     * 
+     * En el primer caso, el proceso de compilación asigna de forma automática el espacio en
+     * memoria requerido para la estructura:
+     */
+    Auto mustang = Auto();
+    strcpy(mustang.marca, "Ford");
+    /**
+     * O trambién utilizando llaves ubicando los valores en el orden en que fueron declaradas
+     * las propiedades en la estructura.
      */
     Auto frontier = { true, "Nissan", 4 };
+
+    /**
+     * En el segundo caso, se declara un puntero en donde se crea on-demand una instancia
+     * de la estructura mediante la palabra reservada new, y es en tiempo de ejecución cuando
+     * el espacio en memoria se asigna.
+     */
+    Auto *prius = new Auto();
+    // En este caso, para acceder al valor de cada propiedad se utiliza la sintaxis de flecha (->)
+    prius->puertas = 4;
     
     cout << "Marca del auto 1: " << jetta.marca << endl;
-    cout << "Marca del auto 2: " << frontier.marca << endl;
+    cout << "Marca del auto 2: " << mustang.marca << endl;
+    cout << "Marca del auto 3: " << frontier.marca << endl;
+    cout << "Puertas del auto 4: " << prius->puertas << " puertas" << endl;
 
     /**
      * Así mismo, el registro puede usarse como tipado de una función:
      */
     Auto rio = crearAuto(4, "Kia");
-    cout << "Marca del auto 3: " << rio.marca << endl;
+    cout << "Marca del auto 5: " << rio.marca << endl;
 
     return 0;
 }
 
+// Método para crear una estructura Auto
 Auto crearAuto(int puertas, char marca[]) {
     Auto a;
     a.puertas = puertas;
