@@ -6,6 +6,7 @@ Ordenadas de menor a mayor dificultad.
 - **/hello-world**. Hola mundo en C++.
     - Estructura básica de cualquier programa en C++.
     - Introducción a las directivas de pre-procesador y namespaces.
+    - Librería iostream.
     - Introducción al operador de inserción <<.
     - Salida en consola usando el objeto cout.
     - Secuencias de escape para salida en consola (\n, \b, \r, \t).
@@ -33,10 +34,10 @@ Ordenadas de menor a mayor dificultad.
     - Conversión de temperaturas.
     - Distancia entre dos puntos.
 - **/array-exercises**. Ejercicios con arreglos.
-    - Limitación de scope en estructura condicional switch.
+    - Limitación de scope en estructura condicional switch (case n: {}).
     - Convertir un texto a mayúsculas.
     - Extraer el menor valor de un arreglo.
-    - Ordenar un arreglo por bubble sort (On^2).
+    - Ordenar un arreglo por bubble sort (complejidad On^2).
     - Producto de dos matrices de 3x3 (arreglos bidimensionales).
 - **/pointers**. Punteros y referencias.
     - Puntero de una variable (operador &).
@@ -50,6 +51,7 @@ Ordenadas de menor a mayor dificultad.
     - Paso de referencias o punteros a una función.
     - Sobrecarga de funciones.
 - **/structures**. Estructuras de datos (registros).
+    - Librería cstring.
     - Declaración e inicialización de un registro (struct).
     - Prototipado de método con retorno de registro.
 - **/piles**. Concepto de pilas.

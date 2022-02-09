@@ -1,5 +1,5 @@
 #include <iostream>
-// Utilidades para manipulación de arreglos de caracteres
+// Utilidades para manipulación de arreglos de caracteres (cadenas de texto)
 #include <cstring>
 
 using namespace std;

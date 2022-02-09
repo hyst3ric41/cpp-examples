@@ -1,4 +1,5 @@
 #include <iostream>
+// La librería cmath contiene funciones matemáticas comúnes
 #include <cmath>
 
 /**
