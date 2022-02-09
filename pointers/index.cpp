@@ -5,10 +5,12 @@ using namespace std;
 int main() {
 
     /**
-     * Punteros. (Ver apuntes de punteros y referencias)
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ----------------------------------------- Punteros ---------------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Para acceder al puntero de una variable existente, se antepone
-     * como prefijo el símbolo (&):
+     * como prefijo el símbolo amperson (&):
      */
     int variable = 5;
     cout << "Contenido de la variable: " << variable << endl;
@@ -62,7 +64,9 @@ int main() {
     cout << endl;
 
     /**
-     * Aritmética de punteros.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ----------------------------------- Aritmética de punteros -------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * El caso de los arreglos es especial. Cuando un arreglo se define, en realidad se trata
      * de un puntero que retornará un valor en específico según la sintaxis de corchetes ([]).
