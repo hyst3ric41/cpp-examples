@@ -1,11 +1,15 @@
 #include <iostream>
 // La librería cmath contiene funciones matemáticas comúnes
 #include <cmath>
+// La librería string permite incorporar el tipo string y manipular cadenas de texto
+#include <string>
 
 /**
  * Declaración de constantes.
  * 
- * Cualquier directiva de preprocesador no lleva (;).
+ * Cualquier directiva de preprocesador no lleva (;). Estas son harcodeadas directamente
+ * sobre el programa y no se almacenan en memoria como sí sucede con las constantes definidas
+ * por el modificador 'const'.
  */
 #define PI 3.14159
 
@@ -270,14 +274,11 @@ int main() {
      * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Existen dos formas de declarar una constante:
-     * - Directiva #define. Ver cabecera del archivo.
+     * - Directiva #define. Ver cabecera del archivo para más información.
      * - Palabra reservada 'const'. Se antepone la palabra reservada 'const' antes
-     * de una inicialización de valor común y corriente.
+     * de una declaración de variable común y corriente.
      * 
-     * No existen diferencia entre ambas. Es importante considerar que las constantes
-     * no son almacenadas en memoria en tiempo de ejecución, sino que el proceso de
-     * compilación es el encargado de leer el código completo y reemplazar la constante
-     * definida con el valor "hardcodeado", es decir, escrito directamente.
+     * En un sentido práctico, no existen diferencias importantes entre ambas.
      */
     cout << "Constante mediante directiva: " << PI << endl;
     const float gravedad = 9.8;
@@ -435,7 +436,7 @@ int main() {
      */
 
     /**
-     * En caso de desar formar palabras con arreglos de chars, es recomendable usar
+     * En caso de desear formar palabras con arreglos de chars, es recomendable usar
      * la secuencia de escape \0 que le indicará a la consola que la secuencia de
      * caracteres ha terminado.
      */
@@ -448,6 +449,14 @@ int main() {
      */
     char texto[] = "Lorem ipsum dolor sit amet.";
     cout << "char[] usando doble comillas: " << texto << endl;
+
+    /**
+     * La librería <string> provee un objeto llamado string que contiene métodos
+     * que permiten manipular a la cadena de texto fácilmente.
+     */
+    string nuevoTexto = "Hola, desde";
+    nuevoTexto.append(" string!!");
+    cout << nuevoTexto << endl;
 
     /**
      * Un comportamiento útil de entrada por consola es que se puede asignar un

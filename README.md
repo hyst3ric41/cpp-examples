@@ -6,7 +6,7 @@ Ordenadas de menor a mayor dificultad.
 - **/hello-world**. Hola mundo en C++.
     - Estructura básica de cualquier programa en C++.
     - Introducción a las directivas de pre-procesador y namespaces.
-    - Librería iostream.
+    - Librería estándar iostream.
     - Introducción al operador de inserción <<.
     - Salida en consola usando el objeto cout.
     - Secuencias de escape para salida en consola (\n, \b, \r, \t).
@@ -20,12 +20,13 @@ Ordenadas de menor a mayor dificultad.
     - Operadores aritméticos (+, -, *, /, %) y su jerarquía de operaciones.
     - Asignaciones compuestas (x++, x--, x +=, x -=, x *=, x /=).
     - Operadores lógicos y de comparación y su jerarquía de operaciones.
-    - Librería cmath (pow, sqrt, sin, cos, tan).
+    - Librería estándar cmath (pow, sqrt, sin, cos, tan).
     - Constantes.
     - Definiciones de tipo (typedef).
     - Estructuras condicionales (if, if-else, switch).
     - Estructuras repetitivas (for, while, do-while) con operadores de bucle (break, continue).
     - Arreglos unidimensionales, longitud de arreglo, cadenas de texto y secuencia de escape null-terminator (\0).
+    - Librería estándar string.
     - Método de entrada por consola cin.getline() y cin.ignore().
 - **/math-exercises**. Ejercicios matemáticos sencillos.
     - Área de un triángulo.
