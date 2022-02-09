@@ -1,0 +1,11 @@
+{
+  "name": "structures",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "g++ ./index.cpp -Wall -Wextra -o exe.o",
+    "start": "npm run build && ./exe.o"
+  },
+  "author": "José Guillermo <memo.board.9999@gmail.com>",
+  "license": "ISC"
+}

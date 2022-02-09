@@ -55,6 +55,10 @@ Ordenadas de menor a mayor dificultad.
     - Librería cstring.
     - Declaración e inicialización de un registro (struct).
     - Prototipado de método con retorno de registro.
+- **/unions-enums**. Uniones y enumeraciones.
+    - Estructura union.
+    - Estructura enum.
+    - Casteo de tipos.
 - **/piles**. Concepto de pilas.
     - Introducción al concepto de pilas.
     - Reservación y liberación de memoria (new y delete).
