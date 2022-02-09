@@ -14,7 +14,9 @@ using namespace std;
 int main() {
     
     /**
-     * Tipos de variables:
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ------------------------------------ Tipos de variables ----------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * - int. Valores numéricos con capacidad de hasta 4 bytes con
      * signo (desde −2,147,483,648 hasta 2,147,483,647).
@@ -74,7 +76,9 @@ int main() {
     cout << endl;
 
     /**
-     * Operador sizeof():
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ------------------------------------ Operador sizeof() -----------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Para obtener el peso en bytes de la variable en cuestión, se invoca el operador
      * sizeof() integrado por C++. Lo anterior significa que, aún teniendo sintaxis de
@@ -94,25 +98,10 @@ int main() {
     cout << endl;
 
     /**
-     * Asignaciones compuestas.
-     * Es una forma compacta de asignar valores a variables elaborando una
-     * operación aritmética conjuntamente:
-     * - (x++). Suma 1 a la variable.
-     * - (x--). Resta 1 a la variable.
-     * - (x +=). Suma a la variable el valor indicado luego del inicializador.
-     * - (x -=). Resta a la variable el valor indicado luego del inicializador.
-     * - (x *=). Multiplica a la variable el valor indicado luego del inicializador.
-     * - (x /=). Divide a la variable el valor indicado luego del inicializador.
-     */
-    unsigned short int i = 10;
-    i++;    // 11
-    i--;    // 9
-    i += 3; // 13
-    i -= 4; // 6
-    i *= 3; // 30
-    i /= 5; // 2
-
-    /**
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ----------------------------------- Modificador unsigned ---------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * 
      * int pesa 4 bytes, es decir 32 bits (1 byte = 8 bits... 8 x 4 = 32), pero los computadores
      * utilizan 1 bit para representar el signo (+/-) del valor numérico, dejando entonces 31 bits
      * disponibles para tomar. Pensando en que 1 bit es un valor binario (1 o 0), entonces 2^31
@@ -131,6 +120,10 @@ int main() {
     cout << endl;
 
     /**
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * -------------------------------- Biblioteca iostream : cin -------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * 
      * 'cin' significa Console Input, función provista por <iostream>
      * y sirve para ingresar valores por consola.
      */
@@ -142,7 +135,10 @@ int main() {
     cout << endl;
 
     /**
-     * Operadores aritméticos.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ---------------------------------- Operadores aritméticos --------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * 
      * (+) - Suma.
      * (-) - Resta.
      * (*) - Multiplicación.
@@ -160,7 +156,31 @@ int main() {
     cout << endl;
 
     /**
-     * Jerarquía de operaciones.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * --------------------------------- Asignaciones compuestas --------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * 
+     * Es una forma compacta de asignar valores a variables elaborando una
+     * operación aritmética conjuntamente:
+     * - (x++). Suma 1 a la variable.
+     * - (x--). Resta 1 a la variable.
+     * - (x +=). Suma a la variable el valor indicado luego del inicializador.
+     * - (x -=). Resta a la variable el valor indicado luego del inicializador.
+     * - (x *=). Multiplica a la variable el valor indicado luego del inicializador.
+     * - (x /=). Divide a la variable el valor indicado luego del inicializador.
+     */
+    short int i = 10;
+    i++;    // 11
+    i--;    // 9
+    i += 3; // 13
+    i -= 4; // 6
+    i *= 3; // 30
+    i /= 5; // 2
+
+    /**
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * --------------------------------- Jerarquía de operaciones -------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Las siguientes operaciones son el orden de resolución en la
      * ejecución de una operación matemática compuesta por varios tipos de operaciones:
@@ -180,7 +200,9 @@ int main() {
     cout << endl;
 
     /**
-     * Operadores lógicos y de comparación.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * --------------------------- Operadores lógicos y de comparación --------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * A diferencia de las operaciones aritméticas, las operaciones lógicas
      * o de comparación se ejecutan de derecha a izquierda.
@@ -205,7 +227,9 @@ int main() {
     cout << endl;
 
     /**
-     * Librería cmath.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ------------------------------------ Biblioteca cmath ------------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Contiene decenas de funciones matemáticas. A continuación, las más importantes:
      * 
@@ -241,7 +265,9 @@ int main() {
     cout << endl;
 
     /**
-     * Constantes.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ---------------------------------------- Constantes --------------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Existen dos formas de declarar una constante:
      * - Directiva #define. Ver cabecera del archivo.
@@ -260,7 +286,9 @@ int main() {
     cout << endl;
 
     /**
-     * Definiciones de tipo (typedef).
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ------------------------------ Definiciones de tipo (typedef) ----------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Es un mecanismo de C++ que permite crear tipos de variables
      * personalizados para evitar escribir múltiples veces el mismo tipo.
@@ -272,6 +300,10 @@ int main() {
     cout << endl;
 
     /**
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * -------------------------------- Estructuras condicionales -------------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * 
      * Estructura condicional simple.
      */
     if (true) {
@@ -303,6 +335,10 @@ int main() {
     }
 
     /**
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * ----------------------------- Estructuras repetitivas o bucles ---------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * 
      * Estructura repetitiva for.
      * 
      * 'size_t' es una definición de tipo built-in de C++
@@ -350,7 +386,9 @@ int main() {
     cout << endl;
 
     /**
-     * Arreglos.
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
+     * --------------------------- Arreglos + Biblioteca iostream : cin -------------------------------
+     * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
      * Son un conjunto de variables bajo una misma dirección en memoria y que
      * pertenecen al mismo tipo (int, char, bool, etc).

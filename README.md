@@ -14,11 +14,11 @@ Ordenadas de menor a mayor dificultad.
 - **/basic-concepts**. Conceptos básicos de C++.
     - Tipos de variables y su inicialización.
     - Notación científica.
-    - Asignaciones compuestas (x++, x--, x +=, x -=, x *=, x /=).
     - Resolver el peso en memoria de variables con exactitud (sizeof).
     - Uso del modificador unsigned.
     - Entrada en consola usando el objeto cin.
     - Operadores aritméticos (+, -, *, /, %) y su jerarquía de operaciones.
+    - Asignaciones compuestas (x++, x--, x +=, x -=, x *=, x /=).
     - Operadores lógicos y de comparación y su jerarquía de operaciones.
     - Librería cmath (pow, sqrt, sin, cos, tan).
     - Constantes.
