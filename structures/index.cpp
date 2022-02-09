@@ -12,9 +12,24 @@ using namespace std;
  * Estructura de datos llamada Auto.
  */
 struct Auto {
+
+    /**
+     * Como se puede osbervar, una estructura puede tener miembros que describan
+     * el valor de una propiedad o funciones que puedan acceder al scope de la
+     * estructura misma de una forma completamente abstracta y encapsulada. Todos
+     * los miembros de la estructura son de acceso público.
+     * 
+     * Este concepto es el preámbulo a la Programación Orientada a Objetos (POO).
+     */
+
     bool isNew = true;
     char marca[50];
     int puertas;
+
+    void arrancar() {
+        cout << "Encendiendo auto " << marca << "..." << endl;
+    }
+    
 };
 
 // Prototipo de función que recibe dos parámetros y retorna una estructura de datos llamada Auto
@@ -65,6 +80,9 @@ int main() {
      */
     Auto rio = crearAuto(4, "Kia");
     cout << "Marca del auto 5: " << rio.marca << endl;
+
+    // Llamando función dentro de estructura
+    rio.arrancar();
 
     return 0;
 }

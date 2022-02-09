@@ -51,14 +51,16 @@ Ordenadas de menor a mayor dificultad.
     - Parámetros opcionales.
     - Paso de referencias o punteros a una función.
     - Sobrecarga de funciones.
-- **/structures**. Estructuras de datos (registros).
+- **/structures**. Introducción a las estructuras de datos y la Programación Orientada a Objetos.
     - Librería cstring.
     - Declaración e inicialización de un registro (struct).
-    - Prototipado de método con retorno de registro.
+    - Prototipado de método con retorno de estructura.
 - **/unions-enums**. Uniones y enumeraciones.
-    - Estructura union.
-    - Estructura enum.
-    - Casteo de tipos.
+    - Estructura de datos tipo union (union).
+    - Enumeraciones (enum).
+    - Sintaxis de casteo.
+- **/classes**. Clases.
+    - Diferencias entre clases y registros (struct).
 - **/piles**. Concepto de pilas.
     - Introducción al concepto de pilas.
     - Reservación y liberación de memoria (new y delete).
