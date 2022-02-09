@@ -46,6 +46,7 @@ Ordenadas de menor a mayor dificultad.
     - Aritmética de punteros en arreglos.
 - **/functions**. Funciones.
     - Prototipado de métodos y procedimientos.
+    - Parámetros opcionales.
     - Paso de referencias o punteros a una función.
     - Sobrecarga de funciones.
 - **/structures**. Estructuras de datos (registros).
@@ -53,4 +54,4 @@ Ordenadas de menor a mayor dificultad.
     - Prototipado de método con retorno de registro.
 - **/piles**. Concepto de pilas.
     - Introducción al concepto de pilas.
-    - Reservación y liberación de memoria con new y delete.
+    - Reservación y liberación de memoria (new y delete).

@@ -13,6 +13,7 @@ using namespace std;
  */
 void saludar();
 int sumar(int a, int b); // No importa si se especifica un nombre de variable o no
+int doblar(int numero, int razon = 2); // Método con parámetro opcional, el cual se especifíca únicamente en el prototipo, mas no en la definición
 bool esImpar(int); // En este caso, no se especifica un nombre del parámetro y funciona igual
 void dividir(float &ref);
 void reemplazar(int *a);
@@ -27,7 +28,7 @@ long potencia(int, int);
 
 int main() {
 
-    // Invocando procedimiento}
+    // Invocando procedimiento
     saludar();
 
     // Sumando dos números invocando a método
@@ -44,7 +45,7 @@ int main() {
      * se puede afectar a la variable original sin tener que
      * volver a realizar asignaciones.
      * 
-     * Comprar método sumar() vs procedimiento dividir() para
+     * Comparar método sumar() vs procedimiento dividir() para
      * ilustrar diferencia.
      * 
      * Importante:
@@ -64,6 +65,9 @@ int main() {
     reemplazar(&metros);
     cout << "Variable metros después de reemplazar: " << metros << endl;
 
+    // Invocando método con parámetro opcional
+    cout << "Número 5 doblado a razón de 2: " << doblar(5) << endl;
+
     return 0;
 }
 
@@ -75,6 +79,11 @@ void saludar() {
 // Método para sumar dos números y retornar el resultado
 int sumar(int a, int b) {
     return a + b;
+}
+
+// Método para multiplicar un número por dos
+int doblar(int numero, int razon) {
+    return numero * razon;
 }
 
 // Método para resolver si un número es par o impar
