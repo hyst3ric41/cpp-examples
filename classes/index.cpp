@@ -30,15 +30,43 @@ class Pokemon {
             }
             sleeping = true;
         }
+        Pokemon &updateName(string name) {
+            /**
+             * En otros casos, el puntero this será útil cuando se necesita
+             * acceder a la instancia desde la clase misma.
+             */
+            cout << this->name << " ahora es " << name << "!" << endl;
+            this->name = name;
+            /**
+             * También puede ser útil para retornar la instancia misma y
+             * encadenar métodos de forma que pueda lograrse una lectura
+             * de código más humana, como por ejemplo:
+             * 
+             * instance.play().stop("abc").others(9);
+             * 
+             * Se retorna el puntero (*) de this y se indica el tipo y símbolo de
+             * amperson (&) en el método para indicar que se tomará el valor
+             * del puntero, que en este caso viene a ser la instancia.
+             */
+            return *this;
+        }
         /**
-         * La siguiente sintaxis de constructor es equivalente a la sintaxis de
-         * asignación in-line:
-         * 
-         * Pokemon(string a, int b) : name(n), power(b) {}
+         * La siguiente sintaxis de constructor:
+         *   Pokemon(string a, int b) {
+         *     name = a;
+         *     power = b;
+         *   }
+         * Es equivalente a la sintaxis de asignación in-line:
+         *   Pokemon(string a, int b) : name(n), power(b) {
+         *     // code
+         *   }
+         * Pero, en la práctica es más conveniente utilizar el puntero
+         * this, el cual es una autoreferencia a la clase y entonces permite
+         * referirse a las propiedades de clase de forma adecuada, sin ambiguedades:
          */
-        Pokemon(string a, int b) {
-            name = a;
-            power = b;
+        Pokemon(string name, int power) {
+            this->name = name;
+            this->power = power;
             cout << "-->> Constructor de " << name << " ejecutado <<--" << endl;
         }
         /**
@@ -75,6 +103,7 @@ int main() {
     cout << "Poder: " << pikachu.power << endl;
     cout << "Capturado: " << pikachu.captured << endl;
     pikachu.sleep();
+    pikachu.updateName("Raichu");
     pikachu.sleep();
 
     cout << endl;

@@ -59,7 +59,7 @@ Ordenadas de menor a mayor dificultad.
     - Estructura de datos tipo union (union).
     - Enumeraciones (enum).
     - Sintaxis de casteo.
-- **/basic-classes**. Clases.
+- **/classes**. Clases.
     - Diferencias entre clases y registros (struct).
     - Estructura de una clase: miembros, constructor y destructor.
     - Puntero this.
