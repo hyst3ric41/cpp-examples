@@ -61,6 +61,9 @@ Ordenadas de menor a mayor dificultad.
     - Sintaxis de casteo.
 - **/classes**. Clases.
     - Diferencias entre clases y registros (struct).
+    - Estructura de una clase: miembros, constructor y destructor.
+    - Modificadores de acceso de miembros de clase (public y private).
+    - Liberación de memoria dinámica de instancia (delete).
 - **/piles**. Concepto de pilas.
     - Introducción al concepto de pilas.
     - Reservación y liberación de memoria (new y delete).
