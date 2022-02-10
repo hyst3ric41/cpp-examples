@@ -65,6 +65,10 @@ Ordenadas de menor a mayor dificultad.
     - Puntero this.
     - Modificadores de acceso de miembros de clase (public y private).
     - Liberación de memoria dinámica de instancia (delete).
+- **/heritance**. Conceptos avanzados de clases.
+    - Modificador static y operador de resolución de alcance (scope resolution operator, ::).
+    - Herencia, modificador de acceso protegido (protected) y herencia múltiple.
+    - Introducción al polimorfismo.
 - **/piles**. Concepto de pilas.
     - Introducción al concepto de pilas.
     - Reservación y liberación de memoria (new y delete).
