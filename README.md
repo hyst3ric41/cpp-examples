@@ -69,6 +69,9 @@ Ordenadas de menor a mayor dificultad.
     - Modificador static y operador de resolución de alcance (scope resolution operator, ::).
     - Herencia, modificador de acceso protegido (protected) y herencia múltiple.
     - Introducción al polimorfismo.
+- **/polymorphism**. Ejercicio de polimorfismo.
+    - Herencia y polimorfismo.
+    - Palabra reservada virtual.
 - **/files**. Manejo de archivos.
     - Escritura de un archivo nuevo (ofstream).
     - Lectura de un archivo (ifstream, getline).
