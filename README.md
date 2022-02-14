@@ -69,6 +69,6 @@ Ordenadas de menor a mayor dificultad.
     - Modificador static y operador de resolución de alcance (scope resolution operator, ::).
     - Herencia, modificador de acceso protegido (protected) y herencia múltiple.
     - Introducción al polimorfismo.
-- **/piles**. Concepto de pilas.
-    - Introducción al concepto de pilas.
-    - Reservación y liberación de memoria (new y delete).
+- **/files**. Manejo de archivos.
+    - Escritura de un archivo nuevo (ofstream).
+    - Lectura de un archivo (ifstream, getline).
