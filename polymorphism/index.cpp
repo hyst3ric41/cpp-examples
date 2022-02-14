@@ -14,6 +14,9 @@ class Mamifero {
         /**
          * Tal como se define un prototipo de función, la palabra reservada
          * virtual definirá al método polimórfico.
+         * 
+         * Más información:
+         * + https://www.geeksforgeeks.org/virtual-destructor/
          */
         virtual void comer() {
             cout << "¡El mamífero está comiendo!" << endl;
