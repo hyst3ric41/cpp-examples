@@ -57,17 +57,13 @@ class Persona : public Mamifero {
 int main() {
 
     // Creando instancias de clases
-    Perro *mizu = new Perro("Mizu", 5);
-    Persona *jose = new Persona("Software Engineer", 23);
+    Perro mizu = Perro("Mizu", 5);
+    Persona jose = Persona("Software Engineer", 23);
 
     // Invocando polimorfismo
-    mizu->comer();
+    mizu.comer();
     cout << endl;
-    jose->comer();
-
-    // Recordando liberar la memoria
-    delete mizu;
-    delete jose;
+    jose.comer();
 
     return 0;
 }
