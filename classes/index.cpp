@@ -51,6 +51,13 @@ class Pokemon {
             return *this;
         }
         /**
+         * Un constructor es un bloque de código que se ejecutará al momento de
+         * que se cree una nueva instancia de clase y que además puede recibir
+         * parámetros de todo tipo.
+         * 
+         * Es posible hacer una sobrecarga de constructores en donde la única
+         * diferencia entre ellos es la cantidad y tipos de parámetros que reciben.
+         * 
          * La siguiente sintaxis de constructor:
          *   Pokemon(string a, int b) {
          *     name = a;
@@ -61,8 +68,8 @@ class Pokemon {
          *     // code
          *   }
          * Pero, en la práctica es más conveniente utilizar el puntero
-         * this, el cual es una autoreferencia a la clase y entonces permite
-         * referirse a las propiedades de clase de forma adecuada, sin ambiguedades:
+         * this el cual es una autoreferencia de la clase, y permite
+         * referirse a las propiedades de clase de forma adecuada y sin ambiguedades:
          */
         Pokemon(string name, int power) {
             this->name = name;
