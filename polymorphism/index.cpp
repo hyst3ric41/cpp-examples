@@ -65,5 +65,9 @@ int main() {
     cout << endl;
     jose->comer();
 
+    // Recordando liberar la memoria
+    delete mizu;
+    delete jose;
+
     return 0;
 }
