@@ -22,6 +22,12 @@ int main() {
      * ------------------------------------ Tipos de variables ----------------------------------------
      * ////////////////////////////////////////////////////////////////////////////////////////////////
      * 
+     * A continuación, se enunciarán los tipos de datos existentes en C++ describiendo además
+     * su peso en memoria. Este peso en memoria depende del tipo de compilador y el modelo
+     * de datos usado. En los siguientes ejemplos, es usará como referencia el compilador estándar
+     * GCC y el modelo de datos estándar de C++, aunque también existen modelos de datos como
+     * LP32, ILP32, LLP64 y LP64. Dichos modelos de datos escapan del alcance de esta guía práctica.
+     * 
      * - int. Valores numéricos con capacidad de hasta 4 bytes con
      * signo (desde −2,147,483,648 hasta 2,147,483,647).
      */
