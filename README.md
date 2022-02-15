@@ -75,4 +75,4 @@ Ordenadas de menor a mayor dificultad.
 - **/files**. Manejo de archivos.
     - Escritura de un archivo nuevo (ofstream).
     - Lectura de un archivo (ifstream, getline).
-- **/header**. Creando archivo de cabecera.
+- **/headers**. Creando e invocando un archivo de cabecera personalizado.
